@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Liste</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="todoContainer" class="container">
+        <h1>Mack Aufgabenliste</h1>
+        <div class="todo-input">
+            <input type="text" id="todoInput" placeholder="Neue Aufgabe eingeben...">
+            <input type="datetime-local" id="dueDateInput">
+            <button onclick="addTodo()">Hinzufügen</button>
+        </div>
+        <div class="sort-container">
+            <span>Sortieren nach:</span>
+            <select id="sortSelect" onchange="sortTodos()">
+                <option value="dueDate">Fälligkeitsdatum</option>
+                <option value="created">Erstellungsdatum</option>
+            </select>
+        </div>
+        <ul id="todoList" class="todo-list">
+            <!-- Todos werden hier dynamisch eingefügt -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
