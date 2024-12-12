@@ -203,3 +203,13 @@ button:hover {
     outline: none;
     border-color: #007AFF;
 }
+
+@media screen and (max-width: 450px) {
+    .todo-input {
+        flex-direction: column;
+    }
+    
+    input[type="datetime-local"] {
+        width: 100%;
+    }
+}
