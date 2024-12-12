@@ -204,12 +204,16 @@ button:hover {
     border-color: #007AFF;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .todo-input {
         flex-direction: column;
     }
     
     input[type="datetime-local"] {
         width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
     }
 }
