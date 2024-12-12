@@ -207,10 +207,15 @@ button:hover {
 @media screen and (max-width: 600px) {
     .todo-input {
         flex-direction: column;
+        gap: 10px;
     }
     
     input[type="datetime-local"] {
         width: 100%;
+        min-width: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        padding: 8px;
     }
 
     .button-group {
