@@ -169,7 +169,7 @@ function renderTodos() {
                 <span class="todo-text">${todo.text}</span>
                 <div class="todo-dates">
                     <span class="todo-date">Erstellt: ${formatDate(todo.created)}</span>
-                    <span class="todo-date ${isTaskOverdue ? 'overdue' : ''}">Fällig: ${formatDate(todo.dueDate)}</span>
+                    <span class="todo-date ${isTaskOverdue ? 'overdue' : ''}">Fälligkeit: ${formatDate(todo.dueDate)}</span>
                 </div>
             </div>
             <div class="button-group">
